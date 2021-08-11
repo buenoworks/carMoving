@@ -75,6 +75,18 @@ body {
     }
 }
 
+.creatby {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 50px;
+    color: #357e87;
+    text-shadow: 1px 1px white, -1px -1px #444;
+}
+
 @keyframes road {
     100%{transform: translateX(-2950px);}
 }
