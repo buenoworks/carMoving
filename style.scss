@@ -1,0 +1,53 @@
+body {
+    background-color: #80deea;
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -300px;
+    border: 1px solid #000;
+    
+    .sun {
+        width: 56px;
+        height: 56px;
+        background: url(./images/sun.png);
+        position: absolute;
+        left: 60%;
+        margin-left: -28px;
+        top: 60%;
+    }
+
+    .road {
+        width: 100%;
+        height: 72px;
+        background: url(./images/road.png);
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .mountain {
+        width: 393px;
+        height: 104px;
+        background: url(./images/mountain.png);
+        position: absolute;
+        bottom: 72px;
+        left: 50%;
+        margin-left: -196.5px;
+    }
+
+    .car {
+        width: 130px;
+        height: 78px;
+        background: url(./images/car.png);
+        position: absolute;
+        bottom: 25px;
+        left: 18%;
+        z-index: 10;
+    }
+}
