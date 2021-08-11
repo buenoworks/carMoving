@@ -1,7 +1,8 @@
 body {
-  background-color: #80deea;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #80deea; }
 
 .all {
   width: 600px;
@@ -10,7 +11,23 @@ body {
   left: 50%;
   top: 50%;
   margin: -200px 0 0 -300px;
-  border: 1px solid #000; }
+  box-shadow: 0 0 10px #00000070;
+  border-radius: 4px;
+  overflow-x: hidden;
+  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); }
+  .all .information {
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    position: absolute;
+    z-index: 99; }
+    .all .information .text {
+      color: #fff;
+      text-align: center;
+      height: 100%;
+      line-height: 400px;
+      width: 100%;
+      text-transform: uppercase; }
   .all .sun {
     width: 56px;
     height: 56px;
@@ -20,15 +37,17 @@ body {
     margin-left: -28px;
     top: 60%; }
   .all .road {
-    width: 100%;
+    width: 10000%;
     height: 72px;
     background: url(./images/road.png);
+    background-repeat: repeat-x;
     position: absolute;
     bottom: 0; }
   .all .mountain {
-    width: 393px;
+    width: 10000%;
     height: 104px;
     background: url(./images/mountain.png);
+    background-repeat: repeat-x;
     position: absolute;
     bottom: 72px;
     left: 50%;
@@ -41,5 +60,30 @@ body {
     bottom: 25px;
     left: 18%;
     z-index: 10; }
+
+@keyframes road {
+  100% {
+    transform: translateX(-2950px); } }
+@keyframes suspension {
+  100% {
+    transform: translateY(-1px); }
+  50% {
+    transform: translateY(2px); }
+  0% {
+    transform: translateY(-1px); } }
+@keyframes mountain {
+  100% {
+    transform: translateX(-2950px); } }
+.roading {
+  animation: road 6s linear infinite; }
+
+.racing {
+  animation: suspension 1s linear infinite; }
+
+.mountainMoving {
+  animation: mountain 1000s linear infinite; }
+
+.hidden {
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
