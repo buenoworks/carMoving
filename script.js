@@ -4,14 +4,14 @@ $(document).ready(function(){
     let car = $('.car');
     let mountain = $('.mountain');
 
-    //keypress
+    //keypress 13 is about enter!
+
     $(document).on('keypress', function(e){
-        // 13 is about enter!
         if(e.which == 13) {
             info.toggleClass('hidden');
             road.toggleClass('roading');
             car.toggleClass('racing');
-            mountain.toggleClass('mountainMoving');
+            mountain.toggleClass('mountain-moving');
         }
     });
 });
