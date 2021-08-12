@@ -4,6 +4,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #80deea; }
 
+.hidden {
+  display: none !important; }
+
 .all {
   width: 600px;
   height: 400px;
@@ -14,13 +17,13 @@ body {
   box-shadow: 0 0 10px #00000070;
   border-radius: 4px;
   overflow-x: hidden;
-  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); }
+  background-image: linear-gradient(to top, #fcc5e4 0%, #fcc5e4 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); }
   .all .information {
     width: 100%;
     height: 100%;
-    background-color: #000000b8;
-    position: absolute;
-    z-index: 99; }
+    background-color: #000000d4;
+    z-index: 999;
+    position: absolute; }
     .all .information .text {
       color: #fff;
       text-align: center;
@@ -51,7 +54,7 @@ body {
     position: absolute;
     bottom: 72px;
     left: 50%;
-    margin-left: -196.5px; }
+    margin-left: -196px; }
   .all .car {
     width: 130px;
     height: 78px;
@@ -60,17 +63,6 @@ body {
     bottom: 25px;
     left: 18%;
     z-index: 10; }
-
-.creatby {
-  font-size: 50px;
-  font-weight: 900;
-  text-transform: uppercase;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 50px;
-  color: #357e87;
-  text-shadow: 1px 1px white, -1px -1px #444; }
 
 @keyframes road {
   100% {
@@ -91,10 +83,18 @@ body {
 .racing {
   animation: suspension 1s linear infinite; }
 
-.mountainMoving {
-  animation: mountain 1000s linear infinite; }
+.mountain-moving {
+  animation: mountain 500s linear infinite; }
 
-.hidden {
-  display: none !important; }
+.creatby {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 50px;
+  color: #357e87;
+  text-shadow: 1px 1px white, -1px -1px #444; }
 
 /*# sourceMappingURL=style.css.map */
